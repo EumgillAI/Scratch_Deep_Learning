@@ -2,6 +2,12 @@ import numpy as np
 
 from core import Function
 
+def square(x):
+    return Square()(x)
+
+def exp(x):
+    return Exp()(x)
+
 class Exp(Function):
     def forward(self, x):
         return np.exp(x)
